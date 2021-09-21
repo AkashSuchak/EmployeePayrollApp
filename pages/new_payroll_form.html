@@ -7,6 +7,7 @@
     <link href="../css/new_payroll_form.css" rel="stylesheet" >
     <title>Employee Payroll Form</title>                
     <script defer src="../js/new_payroll_form.js"></script>
+    <script defer src="../js/EmployeePayroll.js"></script>
 </head>
 <body>
     <!--UC1-->
@@ -21,7 +22,7 @@
     </header>
     <!--UC2-->
     <div class="form-content">
-        <form class="form" action="#" onsubmit="save(event); return false">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save(event); return false">
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
