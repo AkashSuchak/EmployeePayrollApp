@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width-device-width, intial-scale=1.0">        
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet" >
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap" rel="stylesheet" >
     <link href="../css/new_payroll_form.css" rel="stylesheet" >
-    <title>Employee Payroll Form</title>                
+    <title>Employee Payroll APP</title>                
     <script defer src="../js/new_payroll_form.js"></script>
     <script defer src="../js/EmployeePayroll.js"></script>
 </head>
@@ -13,7 +14,7 @@
     <!--UC1-->
     <header class="header-content header">
         <div class="logo-content">
-            <img src="../assets/logo.png" alt="">
+            <img src="../assets/images/logo.png" alt="">
             <div>
                 <span class="emp-text">EMPLOYEE</span><br>
                 <span class="emp-text emp-payroll">PAYROLL</span>
@@ -22,7 +23,7 @@
     </header>
     <!--UC2-->
     <div class="form-content">
-        <form class="form" action="#" onreset="resetForm()" onsubmit="save(event); return false">
+        <form class="form" action="#" onreset="resetForm()" onsubmit="save(); return false">
             <div class="form-head">Employee Payroll Form</div>
             <div class="row-content">
                 <label for="name" class="label text">Name</label>
@@ -64,15 +65,15 @@
             <div class="row-content">
                 <label class="label text" for="department">Department</label>
                 <div>
-                    <input class="checkbox" type="checkbox" name="hr" id="hr" value="HR">
+                    <input class="checkbox" type="checkbox" name="department" id="hr" value="HR">
                     <label class="text" for="hr">HR</label>
-                    <input class="checkbox" type="checkbox" name="sales" id="sales" value="Sales">
+                    <input class="checkbox" type="checkbox" name="department" id="sales" value="Sales">
                     <label class="text" for="sales">Sales</label>
-                    <input class="checkbox" type="checkbox" name="finance" id="finance" value="Finance">
+                    <input class="checkbox" type="checkbox" name="department" id="finance" value="Finance">
                     <label class="text" for="finance">Finance</label>
-                    <input class="checkbox" type="checkbox" name="engineer" id="engineer" value="Engineer">
+                    <input class="checkbox" type="checkbox" name="department" id="engineer" value="Engineer">
                     <label class="text" for="engineer">Engineer</label>
-                    <input class="checkbox" type="checkbox" name="others" id="others" value="Others">
+                    <input class="checkbox" type="checkbox" name="department" id="others" value="Others">
                     <label class="text" for="others">Others</label>
                 </div>
             </div>
@@ -150,7 +151,7 @@
             <div class="button-content">
                 <a href="./home.html" class="resetButton button cancelButton">Cancel</a>
                 <div class="submit-reset">
-                    <button type="submit" class="button submitButton" id="submitbutton">Submit</button>
+                    <button type="submit" class="button submitButton" id="submitButton">Submit</button>
                     <button type="reset" class="button resetButton">Reset</button>
                 </div>
             </div>
