@@ -43,9 +43,9 @@ const createEmployeePayroll = () => {
     employeePayrollData.salary = getInputValueById('#salary');
     employeePayrollData.note = getInputValueById('#notes');
     let date = getInputValueById('#day')+" "+getInputValueById('#month')+" "+getInputValueById('#year');
-    employeePayrollData.date = Date.parse(date);
-    alert("Hello "+employeePayrollData.name)
-    //alert(employeePayrollData.toString());
+    employeePayrollData.startDate = Date.parse(date);
+    //alert("Hello "+date)
+    alert(employeePayrollData.toString());
     return employeePayrollData;
 }
 
@@ -88,7 +88,7 @@ const resetForm = () =>{
     setValue('#notes', '');
     setValue('#day', '1');
     setValue('#month', 'January');
-    setValue('#year', '2020');
+    setValue('#year', '2021');
 }
 const unsetSelectedValues = (propertyValue) =>{
     let allItems = document.querySelectorAll(propertyValue);
