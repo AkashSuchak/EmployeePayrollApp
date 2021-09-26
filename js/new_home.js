@@ -27,7 +27,7 @@ const createInnerHtml = () => {
         <td>${stringifyDate(empPayrollData._startDate)}</td>
         <td>
             <img name="${empPayrollData._name}" onclick="remove(this)" src="../assets/icons/delete-black-18dp.svg" alt="delete">
-            <img id="${empPayrollData._id}" onclick="upadte(this)" src="../assets/icons/create-black-18dp.svg" alt="edit">
+            <img name="${empPayrollData._name}" onclick="update(this)" src="../assets/icons/create-black-18dp.svg" alt="edit">
         </td>
     </tr>`; 
     }   
